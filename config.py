@@ -14,19 +14,19 @@ except Exception:
 #  GitHub reposu KAPALI (private) olsun — token/session burada durur.
 # ══════════════════════════════════════════════════════════
 
-API_ID = 31567558                                                                                      # my.telegram.org
-API_HASH = "7abd506b1fc7b9a191d7e188180e7194"                                                          # my.telegram.org
-BOT_TOKEN = "9117443366:AAF9jHCWxmymR3A_Blos2XpWyY5r59NI9KA"                                           # @BotFather
+API_ID = 34250911                                                                                      # my.telegram.org
+API_HASH = "91e50c6e291f2c7ff46fa443b96cc70a"                                                          # my.telegram.org
+BOT_TOKEN = "9113414619:AAEISya0qxYo_ilKFXZ9WinU3mytCd3hnrA"                                           # @BotFather
 MONGO_URL = "mongodb+srv://mongoguess:guessmongo@cluster0.zcwklzz.mongodb.net/?retryWrites=true&w=majority"  # mongodb+srv://...
 LOGGER_ID = -1003826733145                                                                             # log grubu id  (-100...)
 OWNER_ID = 8259875589                                                                                  # senin Telegram user id
-SESSION = "BAHhrsYAbSk63OhLJfb2o7_XOZeqsb6JCFP-fyulDeFA7w_UYB-Vs-vimqtU610Ytdd9ZUAm8M6rn4JJpi353mdjQOD5GH03X2qvcnF3XvwII-m07kWPBWTKrS7-1-_MZfKJQJ7Rd2aNdea1ngl1Zfh_ACHiNOD3rtn-sCpv0wn2vyTZh9ZYtFABqGGwHMneyxlG-rKv4FDk4ug_MYIva6fJV7Q_f57Y1GLWDBVqS8fC81SX6353BtfDaHtZegxZkL6HY4rlHHaF44OUbGHdpd53jEj9gaZnkiDqcqf0Kq8GXE2Gs06cfMOCEB9Rs0oyBO6VDkOFae6jWXsd8MIKjqB-dBuAdwAAAAIauV9-AQ"  # session_al.bat çıktısı (otomatik de yazılır)
+SESSION = "BAFRwgAAifxLtoySZIAG2GdQoEfDMCHYsbc5OPSHEH189OladwKs4W0i9oKSGdF6Ax4RbK-Mp9eDsPc9F0dlku9FBhhG624u5SrGQ_Kd8RQIlsO_DrL5IaePySvDS4xSYpxSjtOEehKtYaGPnBG0hKDxmbOZymIadDYk1MNcLskaZpVtZBe4OGzEGreYQ09PtvOG5PWsguKXCHC6JoLMVu9rjdoscngPGwbDKgwO9gpBza0hipsqaIw3CRmNGV1OBf-Or8mS_ogvXTiR-YMab4eR5zUHobxsftu6zMry20VfF9DEPL2DjrMhJNuR_K8cmjiI1bA70H_TsgpMnRVAsmyp5Tj0CAAAAAIBKdK5AA"  # session_al.bat çıktısı (otomatik de yazılır)
 
 # isteğe bağlı
 SESSION2 = ""
 SESSION3 = ""
-SUPPORT_CHANNEL = "https://t.me/loncamusic"
-SUPPORT_CHAT = "https://t.me/loncamusic"
+SUPPORT_CHANNEL = "https://t.me/paradiseyazilim"
+SUPPORT_CHAT = "https://t.me/loncasohbetet"
 DURATION_LIMIT = 180                # dakika
 QUEUE_LIMIT = 50
 PLAYLIST_LIMIT = 20
