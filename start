@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# Railway PID 1: exec ile Python sinyal (SIGTERM) alsın, container düzgün kapansın.
+set -u
+
+BGUTIL="${HOME:-/root}/bgutil-ytdlp-pot-provider/server/build/main.js"
+if [ -f "$BGUTIL" ] && command -v node >/dev/null 2>&1; then
+    echo "PO token sağlayıcısı başlatılıyor..."
+    nohup node "$BGUTIL" > bgutil.log 2>&1 &
+    for _ in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15; do
+        if curl -sf http://127.0.0.1:4416/ping >/dev/null 2>&1; then
+            echo "PO token sağlayıcısı hazır."
+            break
+        fi
+        sleep 1
+    done
+else
+    echo "UYARI: bgutil PO token sağlayıcısı bulunamadı, YouTube cookiesiz çalışmayabilir."
+fi
+
+# YouTube sık değişiyor: her açılışta yt-dlp'yi güncelle (başarısız olursa mevcut sürümle devam)
+echo "yt-dlp güncelleniyor..."
+timeout 90 pip3 install -q -U --disable-pip-version-check "yt-dlp[default]" >/dev/null 2>&1 \
+    && echo "yt-dlp güncel: $(python3 -m yt_dlp --version 2>/dev/null)" \
+    || echo "yt-dlp güncellenemedi, mevcut sürüm kullanılıyor."
+
+exec python3 -m KumsalTR

@@ -1,0 +1,11 @@
+.env
+__pycache__/
+*.pyc
+*.session
+*.session-journal
+downloads/
+log.txt
+log.txt.*
+bgutil.log
+session_cikti.txt
+session_al.session
