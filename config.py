@@ -39,7 +39,7 @@ PO_TOKEN = ""
 VISITOR_DATA = ""
 POT_PROVIDER_URL = ""
 # Railway IP'si YouTube tarafından engellenirse: residential proxy (ör. http://kullanici:sifre@host:port)
-PROXY = ""
+PROXY = "http://190.104.146.244:999"
 DEFAULT_THUMB = "https://te.legra.ph/file/3e40a408286d4eda24191.jpg"
 PING_IMG = ""
 START_IMG = ""
